@@ -6,7 +6,7 @@ class MercuryController < ActionController::Base
   layout false
 
   def edit
-    render :plain => '', :layout => 'mercury'
+    render :inline => '', :layout => 'mercury'
   end
 
   def resource
@@ -23,7 +23,7 @@ class MercuryController < ActionController::Base
   end
 
   def test_page
-    render :plain => params
+    render :inline => params
   end
 
   private
